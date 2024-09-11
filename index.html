@@ -9,7 +9,6 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<>
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <a href="" class="navbar-brand">PhoneApp <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -29,6 +28,9 @@
                 <a id="editDeleteBtn" href="#" class=" btn btn-danger">Edit/Delete</a>
             </li>
         </ul>
+        <form class="d-flex ms-auto">
+            <input id="search" type="text" class="form-control" placeholder="Search">
+        </form>
     </nav>
     <div class="container">
         <div id="main-view">
@@ -61,26 +63,38 @@
                 <button id="saveBtn" class="btn btn-primary form-control">Save</button>
             </div>
         </div>
-        <div id="edit-delete-view">
-            <h1>Edit/delete Phones</h1>
+        <div id="edit-form-view">
+            <h1>Edit Phones</h1>
             <div class="col-8 offset-2">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Id</th>
-                            <th>Brand</th>
-                            <th>Name</th>
-                            <th>Price</th>
-                            <th>Store</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                    </tbody>
-                </table>
+                <input type="text" placeholder="id" name="eid" class="form-control" id="">
+                <input type="text" placeholder="brand" name="ebrand" class="form-control" id="">
+                <input type="text" placeholder="name" name="ename" class="form-control" id="">
+                <input type="text" placeholder="price" name="eprice" class="form-control" id="">
+                <input type="text" placeholder="store" name="estore" class="form-control" id=""> <br>
+                <button id="editBtn" class="btn btn-warning form-control">Update</button>
             </div>
         </div>
+    </div>
+    <div id="edit-delete-view">
+        <h1>Edit/delete Phones</h1>
+        <div class="col-8 offset-2">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Brand</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Store</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
     </div>
     </div>
 
